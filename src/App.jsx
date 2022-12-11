@@ -9,7 +9,7 @@ const App = () => {
     console.log("Form submit", e);
   };
   return (
-    <div className="flex md:flex-row flex-col">
+    <div className="flex md:flex-row flex-col h-screen md:overflow-hidden">
       <div className="w-full md:w-1/2 bg-blue-500 h-screen md:-ml-10 md:-skew-x-6">
         <h1 className="flex m-3 text-4xl text-white font-medium md:skew-x-6">
           <AcademicCapIcon className="w-12" />
@@ -42,7 +42,7 @@ const App = () => {
             Join our community today by creating an account today.
             <br /> You are just a few steps away.
           </p>
-          <form className="my-5" onSubmit={handleSubmit}>
+          <form className="my-4" onSubmit={handleSubmit}>
             <div className="flex flex-col items-center">
               <div className="flex w-2/3 md:w-1/2 space-x-2">
                 <div className="flex flex-col w-1/2">
@@ -50,7 +50,7 @@ const App = () => {
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="border border-gray-400 text-lg placeholder:text-slate-400"
+                    className="border border-gray-400 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 text-lg placeholder:text-slate-400"
                   />
                 </div>{" "}
                 <div className="flex flex-col w-1/2">
@@ -58,7 +58,7 @@ const App = () => {
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="border border-gray-400 text-lg placeholder:text-slate-400"
+                    className="border border-gray-400 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 text-lg placeholder:text-slate-400"
                   />
                 </div>
               </div>
@@ -67,7 +67,7 @@ const App = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border border-gray-400 text-lg placeholder:text-slate-400"
+                  className="border border-gray-400 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 text-lg placeholder:text-slate-400"
                 />
               </div>
               <div className="flex flex-col w-2/3 md:w-1/2">
@@ -75,7 +75,7 @@ const App = () => {
                 <input
                   type="text"
                   placeholder="Phone"
-                  className="border border-gray-400 text-lg placeholder:text-slate-400"
+                  className="border border-gray-400 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 text-lg placeholder:text-slate-400"
                 />
               </div>
             </div>
